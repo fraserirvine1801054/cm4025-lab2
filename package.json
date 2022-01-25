@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/fraserirvine1801054/cm4025-lab2/issues"
   },
-  "homepage": "https://github.com/fraserirvine1801054/cm4025-lab2#readme"
+  "homepage": "https://github.com/fraserirvine1801054/cm4025-lab2#readme",
+  "dependencies": {
+    "express": "^4.17.2"
+  }
 }
