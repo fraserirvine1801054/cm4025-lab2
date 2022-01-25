@@ -61,6 +61,17 @@ adminRouter.get('/posts', function(req,res){
 //apply all the routes to our application
 app.use('/admin', adminRouter);
 
+//show the form (GET http://localhost:PORT/login)
+app.route('/login').get(function(req,res){
+    res.send('this is the login form');
+    //process the form (POST http://localhost:PORT/login)
+}).post(function(req,res){
+    console.log('processing');
+    res.send('processing the login form!');
+});
+
+
+
 //start the server
 app.listen(PORT);
 
