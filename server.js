@@ -36,6 +36,12 @@ adminRouter.get('/users', function(req,res){
     res.send("I show all the users!");
 });
 
+//route with parameters (http://localhost:PORT/admin/users/:name)
+adminRouter.get('/users/:name', function(req,res){
+    res.send('hello' + req.params.name + '!');
+});
+
+
 //posts page (http://localhost:PORT/admin/posts)
 adminRouter.get('/posts', function(req,res){
     res.send("I show all the posts");
